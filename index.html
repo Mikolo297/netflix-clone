@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .div1{
+            background-image: url(netflix.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            width: 100%;
+            height: 100vh; 
+            background-color: rgba(0,0,0,0.5); 
+            background-blend-mode: darken;
+        }
+        .div2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .div2 input{
+            padding: 10px;
+        }
+        .mynav{
+            display: flex;
+            justify-content: space-between;
+          padding: 15px 100px;
+        }
+        .mynav img{
+            width: 200px;
+            height: 50px;
+            display: flex;
+        }
+        .main1{
+            display: block;
+            text-align: center;
+            color: white;
+            text-decoration: white;
+            margin-top: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .container h1{
+            font-size: 45px;
+        }
+        .container p{
+            font-size: 24px;
+            margin: 15px;
+        }
+        div input{
+            width: 350px;
+            height: 50px;
+            border:2px solid white;
+            outline: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button1{
+            color: white;
+            background-color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-align: center;
+            padding: 5px 5px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .a:hover{
+            text-decoration: none;
+        }
+        .button2{
+            color: white;
+            background-color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 150px;
+            padding: 20px;
+        }
+        .button2:hover{
+            text-decoration: none;
+        }
+        .first-contain{
+            background-color: black;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            width: 100%;
+            padding: 10px;
+         }
+        .div3 h2{
+            font-size: 45px;
+            text-decoration: white;
+        }
+        .div3 p{
+            font-size: 25px;
+            width: 550px;
+            text-decoration: white;
+        }
+        .section1{
+            background-color: black;
+            margin: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            width: 100%;
+        }
+        .div5 h3{
+            font-size: 50px;
+            text-decoration: white;
+            width: 450px;
+        }
+        .div5 p{
+            font-size: 25px;
+            text-decoration: white;
+            width: 550px;
+        }
+        .first-main{
+            background-color: black;
+            margin: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: white;
+            width: 100%;
+            padding: 150px;
+        }
+        .div7{
+            background-color: black;
+        }
+        .div6 h4{
+            font-size: 70px;
+            text-decoration: white;
+            width: 100px;
+        }
+        .div6 p{
+            font-size: 25px;
+            text-decoration: white;
+            width: 400px;
+        }
+        .mysection{
+            background-color: black;
+            margin: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            width: 100%;
+        }
+        .mysection1 h5{
+            font-size: 50px;
+            text-decoration: white;
+            width: 450px;
+        }
+        .mysection1 p{
+            font-size: 25px;
+            text-decoration: white;
+            width: 550px;
+        }
+        .div8{
+            background-color: black;
+            color: white;
+            margin: 7px;
+            display: block;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            width: 100%;
+            padding: 100px;
+            text-decoration: black;
+        }
+        .div8 h6{
+            text-align: center;
+            font-size: 50px;
+            margin: 10px;
+        }
+        .nav1{
+            border: 2px solid grey;
+            width: 900px;
+            display: flex;
+            padding: 30px 10px;
+            align-items: center;
+            gap: 650px;
+        }
+        .nav1 span{
+            font-size: 25px;
+        }
+        .nav2{
+            border: 2px solid grey;
+            width: 900px;
+            display: flex;
+            padding: 30px 10px;
+            align-items: center;
+            gap: 600px;
+        }
+        .nav3{
+            border: 2px solid grey;
+            width: 900px;
+            display: flex;
+            padding: 30px 10px;
+            align-items: center;
+            gap: 650px;
+        }
+        .nav4{
+            border: 1px solid grey;
+            width: 900px;
+            display: flex;
+            padding: 30px 10px;
+            align-items: center;
+            gap: 650px;
+        }
+        .nav5{
+            border: 1px solid grey;
+            width: 900px;
+            display: flex;
+            padding: 30px 10px;
+            align-items: center;
+            gap: 650px;
+        }
+        .nav6{
+            border: 1px solid grey;
+            width: 900px;
+            display: flex;
+            padding: 30px 10px;
+            align-items: center;
+            gap: 650px;
+        }
+        .div9{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            margin: 15px;
+        }
+        .div9 p{
+            font-size: 24px;
+            color: white;
+            text-align: center;
+            margin: 10px;
+        }
+        .last-container{
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            height: 50vh;
+        }
+        .last-container p{
+            text-align: start;
+            padding: 20px;
+        }
+        .last-container span{
+            display: block;
+            text-decoration: underline;
+            
+        }
+       .mybutton{
+            width: 900px;
+            text-align: start;
+            background-color: #2d2d2d;
+            color: white;
+            padding: 10px;
+            margin-left: 250px;
+            margin-right: 400px;
+            font-size: 15px;
+            margin: 3px;
+       }
+       .top-section{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+        .mybutton:focus .bottom-section{
+            display: block;
+        }
+        .bottom-section{
+            display: none;
+            border-top: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* @media (max-width:1124px){
+            font-size: 35px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <nav class="mynav">
+            <section>
+                <img src="Netflix_Logo_RGB-removebg-preview.png" alt="">
+        </section>
+                <main>
+                    <button class="button1"><a href="#">Sign in</a></button>
+                    </main>
+            </nav>
+        <section class="container">
+            <div class="main1">
+                <h1>Unlimited movies, TV shows, and more</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            </div> 
+            <div class="div2">
+                <input type="email" placeholder="Email address">
+                <button class="button2">GET STARTED ></button>
+            </div>  
+        </section>
+    </div>
+    <main class="first-contain">
+        <div class="div3">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <div class="div4">
+            <img src="hauting.png" alt="">
+        </div>
+    </main>
+    <section class="section1">
+        <div>
+            <img src="stranger things.jpg" alt="">
+        </div>
+        <div class="div5">
+            <h3>Download your shows to watch offline</h3>
+            <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+    </section>
+    <main class="first-main">
+        <div class="div6">
+            <h4>Watch everywhere</h4>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="div7"></div>
+    </main>
+    <section class="mysection">
+        <section>
+            <img src="kids.png" alt="">
+        </section>
+        <section class="mysection1">
+            <h5>Create profiles for kids</h5>
+            <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+        </section>
+    </section>
+    <div class="div8">
+        <h6>Frequently Asked Questions</h6>
+        <button class="mybutton">
+            <div class="top-section">
+                <h1>What is Netflix?</h1>
+                <h1>+</h1>
+            </div>
+            <div class="bottom-section">
+                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                </p>
+                <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+            </div>
+        </button>
+        <button class="mybutton">
+            <div class="top-section">
+                <h1>How much does Netflix cost?</h1>
+                <h1>+</h1>
+            </div>
+            <div class="bottom-section">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₦1,600 to ₦5,000 a month. No extra costs, no contracts.</p>
+            </div>
+        </button>
+        <button class="mybutton">
+            <div class="top-section">
+                <h1>Where can I watch?</h1>
+                <h1>+</h1>
+            </div>
+            <div class="bottom-section">
+                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                <p>You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+            </div>
+        </button>
+        <button class="mybutton">
+            <div class="top-section">
+                <h1>How do I cancel?</h1>
+                <h1>+</h1>
+            </div>
+            <div class="bottom-section">
+                <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+            </div>
+        </button>
+        <button class="mybutton">
+            <div class="top-section">
+                <h1>What can I watch on Netflix?</h1>
+                <h1>+</h1>
+            </div>
+            <div class="bottom-section">
+                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+            </div>
+        </button>
+        <button class="mybutton">
+            <div class="top-section">
+                <h1>Is Netflix good for kids?</h1>
+                <h1>+</h1>
+            </div>
+            <div class="bottom-section">
+                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.</p>
+                <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+            </div>
+        </button>
+        
+        <div class="div9">
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <input type="email" placeholder="Email address">
+                <button class="button2">GET STARTED ></button>
+        </div>
+    </div>
+    <main class="last-container">
+            <p>Questions? Call  0800 110 334</p>
+       <div class="lastdiv1">
+            <span>FAQ</span>
+            <span>Account</span>
+            <span>Investor Relations</span>
+            <span>Redeem Gift Cards</span>
+            <span>Ways to Watch</span>
+            <span>Privacy</span>
+            <span>Corporate Information</span>
+            <span>Speed Test</span>
+            <span>Only on Netflix</span>
+       </div>
+        <div class="lastdiv2">
+            <span>Help Center</span>
+            <span>Media Center</span>
+            <span>Jobs</span>
+            <span>Buy Gift Cards</span>
+            <span>Terms of Use</span>
+            <span>Cookie Preference</span>
+            <span>Contact Us</span>
+            <span>Legal Notices</span>
+            <span>Ad Choices</span>
+        </div>
+    </main>
+</body>
+</html>
